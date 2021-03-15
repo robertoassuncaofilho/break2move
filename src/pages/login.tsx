@@ -6,6 +6,7 @@ import {useContext, useState, useEffect, FormEvent} from 'react'
 import { CurrentUserContext } from '../contexts/UserContext'
 import Messages from '../components/Messages'
 import { MessagesContext } from '../contexts/MessagesContext'
+import Head from 'next/head'
  
 export default function Login () {
 
@@ -30,6 +31,9 @@ export default function Login () {
 
     return (
     <main className={styles.formSignin}>
+        <Head>
+            <title>Login | Break2Move</title>
+        </Head>
         <Form onSubmit={handleSubmit}>
             <img className="mb-4" src="favicon.png" alt="" width="72" height="57" />
             <h1 className="h3 mb-3 fw-normal">Please sign in</h1>

@@ -6,6 +6,7 @@ import {useEffect, useState, useContext, FormEvent} from 'react'
 import { CurrentUserContext } from '../contexts/UserContext'
 import { MessagesContext } from '../contexts/MessagesContext'
 import Messages from '../components/Messages'
+import Head from 'next/head'
 
 export default function Register () {
 
@@ -25,7 +26,7 @@ export default function Register () {
         if (registeredUserKey) {
             router.push('/login')
             .then(success => {
-                addMessage({text: 'User created sucessfulle', title:'Success!', variant: 'success'})
+                addMessage({text: 'User created sucessfully', title:'Success!', variant: 'success'})
             }
             )
         }   
@@ -40,7 +41,10 @@ export default function Register () {
     }
 
     return (
-    <main className={styles.formSignin}>
+    <main className={styles.formSignUp}>
+        <Head>
+            <title>Register | Break2Move</title>
+        </Head>
         <Messages />
         <Form onSubmit={handleSubmit}>
             <img className="mb-4" src="favicon.png" alt="" width="72" height="57" />
@@ -72,7 +76,7 @@ export default function Register () {
             </Form.Group>
             <div className="input-group mb-3">
                 <span className="input-group-text">Profile Picture</span>
-                <input type="file" className="form-control" placeholder="Profile Picture" aria-label="Picture"
+                <input type="file" className={`form-control ${styles.inputFile}`} placeholder="Profile Picture" aria-label="Picture"
                 onChange={(e) => setSelectedFile(e.target.files[0])} />
             </div>
             {/* <div className="custom-file">
