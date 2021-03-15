@@ -29,5 +29,5 @@ export async function register(first_name: string, last_name: string, email: str
     formData.append("password2", password2);
     formData.append("picture", picture);
     return await instance.post('dj-rest-auth/registration/', formData)
-        .then( (response: AxiosResponse) => { return response.data['key']})
+        .then( (response: AxiosResponse) => { return response.data.key})
 }
