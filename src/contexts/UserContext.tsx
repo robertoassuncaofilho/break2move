@@ -30,7 +30,7 @@ export function UserProvider({ children }: UserProviderProps) {
         .catch(error => {
             setIsLoggedIn(false); 
             setLoggedUser(null); 
-            addApiMessage(error.response.data);
+            error.response && addApiMessage(error.response.data);
         })
     }
 
@@ -39,7 +39,7 @@ export function UserProvider({ children }: UserProviderProps) {
         .then(response => {
             setRegisteredUserKey(response)
         })
-        .catch(error => {setRegisteredUserKey(null); addApiMessage(error.response.data);})
+        .catch(error => {setRegisteredUserKey(null); error.response && addApiMessage(error.response.data);})
     }
 
     function logout() {
