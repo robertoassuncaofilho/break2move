@@ -1,0 +1,22 @@
+.inputUp {
+    margin-bottom: -19px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .inputMiddle {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .inputDown {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+  .buttonDown {
+    margin-top: 10px;
+  }

@@ -1,0 +1,53 @@
+.formSignin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.formSignin .checkbox {
+  font-weight: 400;
+}
+.formSignin .formControl {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.formSignin .formControl:focus {
+  z-index: 2;
+}
+
+.inputUp {
+  margin-bottom: -19px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.inputMiddle {
+  margin-bottom: -19px;
+  margin-top: 0px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.inputDown {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.buttonDown {
+  margin-top: 10px;
+}
+
+.inputFile {
+  flex: 1;
+  align-items: start;
+  height: auto;
+  font-size: 16px;
+  text-align: left;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  color: var(--text);
+}
