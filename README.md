@@ -32,6 +32,7 @@ This project was developed using the following frontend technologies:
 - [Axios](https://github.com/axios/axios)
 
 The backend project is acessible in the following repository:
+- [Backend](https://github.com/robertoassuncaofilho/break2moveapi)
 
 ## 💻 Project
 
